@@ -1,15 +1,30 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure} from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-// import public/assets/images/benice_straight_Bfill_cropped.png
+import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import benice_straight_Bfill_cropped from '../Images/images/benice_straight_Bfill_cropped.png'
-
+import IconSpotify from '../Icons/Spotify'
+import IconFacebookCircleLine from '../Icons/Facebook'
+import IconEmail from '../Icons/Email'
+import IconInstagram from '../Icons/Instagram'
+import IconBxlTiktok from '../Icons/Tiktok'
+import IconLogoYoutube from '../Icons/Youtube'
+import IconTwitter from '../Icons/Twitter'
+import IconBxlSoundcloud from '../Icons/Soundcloud'
+import IconApplemusic from '../Icons/AppleMusic'
 
 const navigation = [
-  { name: 'About', href: '#', current: true },
-  { name: 'Gigs', href: '#', current: false },
-  { name: 'Contact', href: '#', current: false },
+  { name: 'Spotify', href: 'https://open.spotify.com/artist/6nnljk5ucY1fQue3CzHjZj?si=kkiUYTUQQ-W5NUdlvZ7miA', icon: <IconSpotify /> },
+  { name: 'Instagram', href: 'https://instagram.com/be_nice_band', icon: <IconInstagram/>},
+  { name: 'Tiktok', href: 'https://tiktok.com/@be.nice.band', icon: <IconBxlTiktok/> },
+  { name: 'Youtube', href: 'https://youtube.com/@beniceband', icon: <IconLogoYoutube/> },
+  { name: 'Facebook', href: 'https://www.facebook.com/beniceband1', icon: <IconFacebookCircleLine/> },
+  { name: 'Twitter', href: 'https://x.com/BE_NICE_BAND', icon: <IconTwitter/> },
+  { name: 'Soundcloud', href: 'https://soundcloud.com/be-nice-band1', icon: <IconBxlSoundcloud/> },
+  { name: 'Apple Music', href: 'https://music.apple.com/gb/artist/be-n-ce/1670774338', icon: <IconApplemusic/>  },
+  { name: 'Email', href: 'be.nice.band1@gmail.com', icon: <IconEmail/>},
 ]
+
+console.log(navigation);
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -46,33 +61,20 @@ export default function Navbar() {
                     alt="Logo"
                   />
                 </div>
-                <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4">
+                <div className="hidden sm:block sm:ml-6 origin-top-right absolute right-0 mt-0 w-auto">
+                  <div className="flex space-x-4 a">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                        className="icon icon--fill  header-icon header-icon-border-shape-none header-icon-border-style-outline"
                       >
-                        {item.name}
+                        <image href={item.image} width="110" height="110"/>
+                        {item.icon}
                       </a>
                     ))}
                   </div>
                 </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-
               </div>
             </div>
           </div>
