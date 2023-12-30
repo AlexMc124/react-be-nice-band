@@ -24,8 +24,6 @@ const navigation = [
   { name: 'Email', href: 'be.nice.band1@gmail.com', icon: <IconEmail/>},
 ]
 
-console.log(navigation);
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
