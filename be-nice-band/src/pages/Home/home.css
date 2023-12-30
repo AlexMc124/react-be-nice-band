@@ -1,0 +1,169 @@
+
+body {  
+  background: url(../../BackgroundImages/indexphoto.jpg) no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+  height: auto;
+  max-width: 100%;
+} 
+
+/* @keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
+}
+  */
+
+/* 
+.homeTextDiv {
+    display: inline-block;
+    top: 225px;
+    width: 100%;
+    
+} */
+
+.leftside{
+  background: transparent;
+}
+
+.homeText {
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    line-height: 30px;
+    text-align: left;
+    padding-top: 25px;
+}
+
+.homeTitle {
+    margin: auto;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+}
+
+    @media (min-width: 320px) {
+      body{
+        background-position: top 35px left -250px;
+      }
+
+    .homeCard-body {margin-left: 10%;
+                    margin-right: 10%;
+                    margin-top: 350px;
+    }
+    .homeTextDiv {text-align: left;
+                  width: 100%; 
+    }
+    .homeTitle {font-size: 15px;
+      text-align: center;
+
+    }
+    .homeText {font-size: 15px;
+                line-height: 25px;}
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media (min-width: 480px) {
+    .homeCard-body {margin-left: 5%;
+                margin-top: 200px;
+    }
+    .homeTextDiv {text-align: left;
+              width: 100%; 
+    }
+    .homeTitle {font-size: 25px;
+      text-align: center;
+
+    }
+    .homeText {font-size: 20px;
+            line-height: 25px;}
+  } 
+
+  @media only screen and (min-width: 600px) {
+    body{
+      background-position: top 65px left 10px;
+    }
+  .homeCard-body {
+    margin-left: 10%;
+    margin-top: 250px;
+  }
+  .homeTextDiv {text-align: left;
+            width: 90%; 
+  }
+  .homeTitle {font-size: 28px;
+    text-align: center;
+
+  }
+  .homeText {font-size: 24px;
+          line-height: 40px;}
+} 
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+    @media (min-width: 768px) {
+.homeCard-body{
+  margin-left: 10%;
+  margin-top: 350px;
+}
+.homeTextDiv {
+  top: 205px;
+  width: 100%;
+}
+.homeTitle {
+  font-size: 28px;
+  text-align: center;
+
+}
+.homeText {
+  font-size: 18px;
+}
+    
+  }  
+  
+  /*  Large devices (laptops/desktops, 992px and up) */
+    @media (min-width: 1024px) {
+      .homeCard-body{
+        margin-left: -10%;
+        margin-top: 425px;
+      }
+      .homeTextDiv {
+        width: 100%;
+      }
+      .homeTitle {
+        font-size: 30px;
+        text-align: center;
+      
+      }
+      .homeText {
+        font-size: 20px;
+        line-height: 30px;
+      }
+  }  
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media(min-width: 1200px) {
+      .homeCard-body{
+        margin-left: 35%;
+        margin-top: 10px;
+      }
+      .homeTextDiv {
+        padding-top: 55px;
+        width: 90%;
+      }
+      .homeTitle {
+        font-size: 40px;
+      
+      }
+      .homeText {
+        font-size: 18px;
+        font-weight: 600;
+      }
+  }  
