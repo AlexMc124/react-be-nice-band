@@ -1,7 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure} from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
+// import public/assets/images/benice_straight_Bfill_cropped.png
+import benice_straight_Bfill_cropped from '../Images/images/benice_straight_Bfill_cropped.png'
+
 
 const navigation = [
   { name: 'About', href: '#', current: true },
@@ -35,12 +37,12 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="./public/assets/images/benice_straight_Bfill_cropped.png"
+                    src={benice_straight_Bfill_cropped}
                     alt="Logo"
                   />
                   <img
                     className="hidden lg:block h-8 w-auto"
-                    src="src/public/assets/images/benice_straight_Bfill_cropped.png"
+                    src={benice_straight_Bfill_cropped}
                     alt="Logo"
                   />
                 </div>
