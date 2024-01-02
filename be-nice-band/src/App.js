@@ -16,8 +16,9 @@ function App() {
       }}>
         <Section />
       </div>
+      
       <div class="h-screen" style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL + 'BackgroundImages/liveshowsbg.jpg'})`,
+        backgroundImage: `url(${process.env.PUBLIC_URL + 'BackgroundImages/space.gif'})`,
         backgroundSize: 'cover',
       }}>
         <LiveDatesSection />
