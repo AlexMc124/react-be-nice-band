@@ -2,37 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* make the background colour of the main page and image in the Images Folder */
-body {  
-    background: url(../src/BackgroundImages/indexphoto.jpg) no-repeat fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: black;
-    height: auto;
-    max-width: 100%;
-  } 
-
 /* make the links of the navbar stick to the right of the screen */
 .navbar {
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+
+/* make the background colour of the main page and image in the Images Folder */
+.section-background {
+    position: absolute;
     top: 0;
-    width: 100%;
-    text-align: right;
-    padding: 10px;
-  }
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.section-background {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  pointer-events: none;
+}
+
+.backgroundimage {  
+  background: url(../src/BackgroundImages/indexphoto.jpg) no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+  max-width: 100%;
+
+} 
+
+.section-border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 150px;
+}
 
 /* make the footer stick to the base of the page */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
