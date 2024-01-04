@@ -23,8 +23,9 @@ function App() {
         <Section />
       </div>
 
-      <div class="section-border mx-auto h-screen bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500">
-        <EPK />
+      <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500">
+        {/* <EPK /> */}
+        <EPK/>
       </div>
 
       <div

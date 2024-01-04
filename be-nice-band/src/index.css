@@ -18,6 +18,9 @@
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 /* make the footer stick to the base of the page */
 footer {
