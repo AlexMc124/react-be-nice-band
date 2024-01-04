@@ -265,49 +265,6 @@ var _jsxFileName = "/Users/alex.mcintosh/Documents/BandSite/react-be-nice-band/b
 const images = __webpack_require__("./src/Images/images sync recursive ^\\.\\/.*$"); // make an Object of image urls where the key is the image name and the value is the image url
 
 
-const imageList = images.keys().reduce((imageList, imagePath) => {
-  const imageName = imagePath.split('/').pop().split('.')[0];
-  imageList[imageName] = images(imagePath).default;
-  return imageList;
-}, {});
-console.log(imageList);
-const navigation = [{
-  name: 'Spotify',
-  href: 'https://open.spotify.com/artist/6nnljk5ucY1fQue3CzHjZj?si=kkiUYTUQQ-W5NUdlvZ7miA',
-  image: imageList._MGL7131
-}, {
-  name: 'Instagram',
-  href: 'https://instagram.com/be_nice_band',
-  image: imageList.instagramlogowhite
-}, {
-  name: 'Tiktok',
-  href: 'https://tiktok.com/@be.nice.band',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Youtube',
-  href: 'https://youtube.com/@beniceband',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Facebook',
-  href: 'https://www.facebook.com/beniceband1',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Twitter',
-  href: 'https://x.com/BE_NICE_BAND',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Soundcloud',
-  href: 'https://soundcloud.com/be-nice-band1',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Apple Music',
-  href: 'https://music.apple.com/gb/artist/be-n-ce/1670774338',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}, {
-  name: 'Email',
-  href: 'be.nice.band1@gmail.com',
-  image: _Images_images_benice_straight_Bfill_cropped_png__WEBPACK_IMPORTED_MODULE_0__
-}];
 
 function classNames() {
   for (var _len = arguments.length, classes = new Array(_len), _key = 0; _key < _len; _key++) {

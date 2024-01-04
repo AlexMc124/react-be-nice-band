@@ -1,20 +1,26 @@
+import { Carousel } from "@material-tailwind/react";
 import * as React from "react";
-import "yet-another-react-lightbox/styles.css";
+
 
 export default function BeNiceLightBox() {
   return (
-    <>
-      <CCarousel controls>
-        <CCarouselItem>
-            <CImage className="d-block w-100" src={ReactImg} alt="slide 1" />
-        </CCarouselItem>
-        <CCarouselItem>
-            <CImage className="d-block w-100" src={VueImg} alt="slide 2" />
-        </CCarouselItem>
-        <CCarouselItem>
-            <CImage className="d-block w-100" src={AngularImg} alt="slide 3" />
-        </CCarouselItem>
-    </CCarousel>
-    </>
+    <Carousel className="rounded-xl">
+      <img
+        src="/images/ghosts1.JPG"
+        alt="Ghosts Cover"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="/images/fastcars3.JPG"
+        alt="Fast Cars"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="/images/jamesem.jpg"
+        alt="Em at the Horn"
+        className="h-full w-full object-cover"
+      />
+    </Carousel>
+
   );
 }
