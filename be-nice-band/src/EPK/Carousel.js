@@ -4,6 +4,7 @@ import * as React from "react";
 
 export default function BeNiceLightBox() {
   return (
+    <>
     <Carousel className="rounded-xl">
       <img
         src="/images/ghosts1.JPG"
@@ -21,6 +22,6 @@ export default function BeNiceLightBox() {
         className="h-full w-full object-cover"
       />
     </Carousel>
-
+    </>
   );
 }
