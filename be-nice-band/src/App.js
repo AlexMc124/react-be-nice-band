@@ -10,36 +10,9 @@ function App() {
   return (
     <div>
       <Navbar />
-
-      <div
-        class="h-screen"
-        style={{
-          backgroundImage: `url(${
-            process.env.PUBLIC_URL + "/BackgroundImages/indexphoto.jpg"
-          })`,
-          backgroundSize: "cover",
-        }}
-      >
-        <Section />
-      </div>
-
-      <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500">
-        {/* <EPK /> */}
-        <EPK/>
-      </div>
-
-      <div
-        class="h-screen"
-        style={{
-          backgroundImage: `url(${
-            process.env.PUBLIC_URL + "BackgroundImages/space.gif"
-          })`,
-          backgroundSize: "cover",
-        }}
-      >
-        <LiveDatesSection />
-      </div>
-
+      <Section />
+      <EPK/>
+      <LiveDatesSection />
       <Footer />
     </div>
   );

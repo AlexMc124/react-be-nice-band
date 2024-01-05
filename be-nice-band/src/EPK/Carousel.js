@@ -1,27 +1,24 @@
 import { Carousel } from "@material-tailwind/react";
-import * as React from "react";
-
-
-export default function BeNiceLightBox() {
+ 
+export default function CarouselDefault() {
   return (
-    <>
-    <Carousel className="rounded-xl">
+    <Carousel transition={{ duration: 0.5 }} autoplay={true} className="rounded-xl h-1/4">
       <img
-        src="/images/ghosts1.JPG"
-        alt="Ghosts Cover"
-        className="h-full w-full object-cover"
-      />
-      <img
-        src="/images/fastcars3.JPG"
+        src="images/fastcars3.JPG"
         alt="Fast Cars"
         className="h-full w-full object-cover"
       />
       <img
-        src="/images/jamesem.jpg"
-        alt="Em at the Horn"
+        src="images/jamespolanem.jpg"
+        alt="image 2"
+        className="h-full w-full object-cover"
+      />
+      <img
+        src="images/noghosts2.JPG"
+        alt="image 3"
         className="h-full w-full object-cover"
       />
     </Carousel>
-    </>
   );
 }
+
