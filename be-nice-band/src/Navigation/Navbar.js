@@ -63,13 +63,13 @@ export default function Navbar() {
         >
           <img
             src="Titles/benice_straight_Bfill_cropped.png"
-            class="h-8"
+            class="h-8 hover:h-10"
             alt="Be Nice Logo"
           />
         </a>
         <ul class="flex flex-wrap items-center hover:black">
           {navigation.map((item) => (
-            <li class="group/item hover:bg-slate-100 ...">
+            <li>
             <a
               key={item.name}
               href={item.href}
