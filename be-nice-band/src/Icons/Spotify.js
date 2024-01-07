@@ -4,7 +4,6 @@ import * as React from "react";
 function IconSpotify() {
   return (
     <svg
-      class="fill-white hover:fill-black"
       viewBox="0 0 15 15"
       height="1.5em"
       width="1.5em"

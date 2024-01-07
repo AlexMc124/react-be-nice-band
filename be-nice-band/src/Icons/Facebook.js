@@ -5,7 +5,6 @@ function IconFacebookCircleLine() {
   return (
     <svg
       viewBox="0 0 24 24"
-      fill="white"
       height="1.5em"
       width="1.5em"
     >

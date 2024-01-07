@@ -1,27 +1,3 @@
-const live_dates = [
-  {
-    location: "London, UK",
-    venue: "THE HORN",
-    date: "2024-09-01",
-    tickets: "https://www.eventbrite.co.uk/e/163973001837",
-    description: "",
-  },
-  {
-    location: "Chatham, UK",
-    venue: "Poco Loco",
-    date: "2024-13-01",
-    tickets: "https://www.eventbrite.co.uk/e/163973001837",
-    description: "",
-  },
-  {
-    location: "Colchester, UK",
-    venue: "Three Wise Monkeys",
-    date: "2024-02-02",
-    tickets: "https://www.eventbrite.co.uk/e/163973001837",
-    description: "",
-  },
-];
-
 function SongKick() {
   return (
     <a

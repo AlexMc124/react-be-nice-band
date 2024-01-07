@@ -4,7 +4,6 @@ import * as React from "react";
 function IconEmail() {
   return (
     <svg
-      class="fill-white hover:fill-black"
       viewBox="0 0 24 24"
       height="1.5em"
       width="1.5em"
