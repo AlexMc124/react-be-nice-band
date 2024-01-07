@@ -4,7 +4,7 @@ import "yet-another-react-lightbox/styles.css";
 
 export default function EPK() {
   return (
-    <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500 p-10">
+    <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500 p-2">
       <div class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
