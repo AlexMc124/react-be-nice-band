@@ -2,7 +2,7 @@ function SongKick() {
   return (
     <a
       href="https://www.songkick.com/artists/10250591"
-      class="songkick-widget"
+      className="songkick-widget"
       data-theme="dark"
       data-track-button="on"
       data-detect-style="off"
@@ -25,7 +25,7 @@ function SongKick() {
 
 export default function LiveDatesSection() {
   return (
-    <div class="h-screen bg-space-background bg-cover">
+    <div class="h-screen bg-center bg-space-background bg-cover">
       <div
         className="live-dates-section"
         class="container mx-auto p-10 text-center mb-9"
