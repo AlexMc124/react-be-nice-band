@@ -33,27 +33,6 @@ export default function LiveDatesSection() {
         <h1 className="mb-5 text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
           Live Dates
         </h1>
-        {/* {live_dates.map((live_date) => (
-          <section
-            className="live-dates-section__container"
-            class="w-full align-centre"
-          >
-            <div
-              className="live-dates-section__gig"
-              class="mb-9 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 dark:text-white"
-            >
-              <h3>
-                {live_date.location.toUpperCase()} -{" "}
-                {live_date.venue.toUpperCase()} - {live_date.date.toUpperCase()}{" "}
-                -{" "}
-                <a class="bg-sky-500 hover:bg-sky-700" href={live_date.tickets}>
-                  TICKETS
-                </a>
-              </h3>
-              <div>{live_date.description} </div>
-            </div>
-          </section>
-        ))} */}
       </div>
       <SongKick />
     </div>
