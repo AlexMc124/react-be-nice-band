@@ -33,7 +33,9 @@ export default function LiveDatesSection() {
         <h1 className="mb-5 text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
           Live Dates
         </h1>
-      <SongKick />
+      </div>
+      <div class="container mx-auto p-10 text-center mb-9">
+        <SongKick />
       </div>
     </div>
   );
