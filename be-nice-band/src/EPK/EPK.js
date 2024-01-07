@@ -9,27 +9,20 @@ export default function EPK() {
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
             <img
-              class="size-32"
+              class="size-1/6"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
             <div class="flex flex-col">
-              <img
-                  src="Titles/flaminglogo.gif"
-                  alt="Flaming Text"
-                />
-                <img
-                src="Titles/flamingsubtitle.gif"
-                alt="Flaming Subtext"
-                />
-              </div>
+              <img src="Titles/flaminglogo.gif" alt="Flaming Text" />
+              <img src="Titles/flamingsubtitle.gif" alt="Flaming Subtext" />
+            </div>
             <img
-              class="size-32"
+              class="size-1/6"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
           </div>
-          
         </div>
 
         <div class="container mx-auto p-10 text-left font-mono mb-9 flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
@@ -89,7 +82,7 @@ export default function EPK() {
             </div>
           </section>
 
-          <section  class="mb-2">
+          <section class="mb-2">
             <div class="text-xl text-left underline">
               Accolades & Achievements
             </div>
@@ -111,9 +104,8 @@ export default function EPK() {
           <div class="text-centre indent-2 text-base/7">
             JOIN TODAY AND START BEING NICE!!!
           </div>
-
         </div>
-        
+
         <div>
           <section>
             <CarouselDefault />
