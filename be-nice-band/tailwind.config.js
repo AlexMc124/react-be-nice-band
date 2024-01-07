@@ -16,4 +16,7 @@ module.exports = withMT({
     }},
   },
   plugins: [],
+  safelist: [
+    "songkick-widget"
+  ]
 });
