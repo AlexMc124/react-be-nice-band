@@ -55,25 +55,24 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <nav class="bg-gray-800 shadow fixed top-0 left-0 right-0">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+    <nav class="bg-gray-800 fixed top-0 left-0 right-0">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto md:flex md:items-center md:justify-between">
         <a
           href="https://benice.band/"
           class="flex items-center"
         >
           <img
             src="Titles/benice_straight_Bfill_cropped.png"
-            class="h-8 hover:h-10"
+            class="h-10 hover:h-14"
             alt="Be Nice Logo"
           />
         </a>
-        <ul class="flex flex-wrap items-center hover:black">
+        <ul class="flex flex-wrap items-center">
           {navigation.map((item) => (
             <li>
             <a
-              key={item.name}
               href={item.href}
-              className="p-10"
+              class="p-5 fill-gray-500 hover:fill-white me-4 md:me-6"
             >
               {item.icon}
             </a>

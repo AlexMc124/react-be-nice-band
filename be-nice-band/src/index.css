@@ -1,36 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* make the links of the navbar stick to the right of the screen */
-navbar {
-  background-color: black;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  text-align: right;
-  padding: 10px;
-}
-
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* make the footer stick to the base of the page */
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
