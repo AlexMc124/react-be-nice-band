@@ -4,31 +4,32 @@ import "yet-another-react-lightbox/styles.css";
 
 export default function EPK() {
   return (
-    <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500 p-2 w-full">
+    <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500">
       <div class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
             <img
-              class="size-24 sm:size-6"
+              class="size-32"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
+            <div class="flex flex-col">
+              <img
+                  src="Titles/flaminglogo.gif"
+                  alt="Flaming Text"
+                />
+                <img
+                src="Titles/flamingsubtitle.gif"
+                alt="Flaming Subtext"
+                />
+              </div>
             <img
-              class="sm:w-1/4"
-              src="Titles/flaminglogo.gif"
-              alt="Flaming Text"
-            />
-            <img
-              class="size-24 sm:size-6"
+              class="size-32"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
           </div>
-          <img
-            class="flex flex-col h-16 items-center justify-centern"
-            src="Titles/flamingsubtitle.gif"
-            alt="Flaming Subtext"
-          />
+          
         </div>
 
         <div class="container mx-auto p-10 text-left font-mono mb-9 flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
