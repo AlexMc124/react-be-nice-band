@@ -9,17 +9,17 @@ export default function EPK() {
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
             <img
-              class="mt-10 size-24"
+              class="size-24 sm:size-12"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
             <img
-              class="mt-10 ml-10 mr-10"
+              class="p-3 sm:w-1/2"
               src="Titles/flaminglogo.gif"
               alt="Flaming Text"
             />
             <img
-              class="mt-10 size-24"
+              class="size-24 sm:size-12"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
@@ -32,7 +32,7 @@ export default function EPK() {
         </div>
 
         <div class="container mx-auto p-10 text-left font-mono mb-9 flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
-          <section class="p-5">
+          <section class="mb-2">
             <div class="text-xl text-left underline">Intro</div>
             <div class="text-left indent-2 p-2 text-base/7">
               BE NICE isn't just a band name, it's a movement. Hailing from
@@ -42,7 +42,7 @@ export default function EPK() {
             </div>
           </section>
 
-          <section class="p-5">
+          <section class="mb-2">
             <div class="text-xl text-left underline">Meet the Band</div>
             <ul class="text-left p-2 text-base/7">
               <li>
@@ -64,7 +64,7 @@ export default function EPK() {
             </ul>
           </section>
 
-          <section class="p-5">
+          <section class="mb-2">
             <div class="text-xl text-left underline">Musical Journey</div>
             <div class="text-left p-2 text-base/7">
               Forming in December 2022, BE NICE has been on a musical journey
@@ -77,7 +77,7 @@ export default function EPK() {
             </div>
           </section>
 
-          <section class="p-5">
+          <section class="mb-2">
             <div class="text-xl text-left underline">Sound & Style</div>
             <div class="text-left p-2 text-base/7">
               BE NICE's sound is a sonic tapestry woven with the legacy of Punk
@@ -88,7 +88,7 @@ export default function EPK() {
             </div>
           </section>
 
-          <section class="p-5">
+          <section  class="mb-2">
             <div class="text-xl text-left underline">
               Accolades & Achievements
             </div>
@@ -101,13 +101,13 @@ export default function EPK() {
             </ul>
           </section>
 
-          <div class="text-left indent-2 p-2 text-base/7">
+          <div class="text-left indent-2 text-base/7">
             BE NICE is more than just a band; they're a community. Join them on
             their journey of musical exploration and spread the message of
             kindness, one infectious beat at a time.
           </div>
 
-          <div class="text-left indent-2 p-2 text-base/7">
+          <div class="text-centre indent-2 text-base/7">
             JOIN TODAY AND START BEING NICE!!!
           </div>
 

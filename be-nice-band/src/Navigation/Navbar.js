@@ -72,7 +72,7 @@ export default function Navbar() {
             <li>
             <a
               href={item.href}
-              class="p-5 fill-gray-500 hover:fill-white me-4 md:me-6"
+              class="p-5 fill-gray-500 hover:-translate-y-1 me-4 md:me-6 "
             >
               {item.icon}
             </a>
