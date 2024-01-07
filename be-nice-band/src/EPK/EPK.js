@@ -9,17 +9,17 @@ export default function EPK() {
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
             <img
-              class="size-24 sm:size-12"
+              class="size-24 sm:size-6"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
             <img
-              class="sm:w-1/2"
+              class="sm:w-1/4"
               src="Titles/flaminglogo.gif"
               alt="Flaming Text"
             />
             <img
-              class="size-24 sm:size-12"
+              class="size-24 sm:size-6"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
