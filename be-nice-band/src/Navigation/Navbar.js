@@ -62,7 +62,7 @@ export default function Navbar() {
           class="flex items-center"
         >
           <img
-            src="Titles/benice_straight_Bfill_cropped.png"
+            src="Titles/be_nice_white_logo.png"
             class="h-10 hover:h-14"
             alt="Be Nice Logo"
           />

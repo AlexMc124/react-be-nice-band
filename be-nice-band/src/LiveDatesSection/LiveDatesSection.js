@@ -7,9 +7,26 @@ export default function LiveDatesSection() {
         className="live-dates-section"
         class="container mx-auto p-10 text-center"
       >
-        <h1 className="text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
-          Live Dates
-        </h1>
+      <div class="flex flex-col items-center justify-center">
+          <div class="flex flex-row items-center justify-center">
+            <img
+              class="size-1/4"
+              src="Titles/3dgifmaker96154.gif"
+              alt="flip logo"
+            />
+            <div class="flex flex-col">
+              <h1 className="text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
+                Live Dates
+              </h1>
+            </div>
+            <img
+              class="size-1/4"
+              src="Titles/3dgifmaker96154.gif"
+              alt="flip logo"
+            />
+          </div>
+        </div>
+        
       </div>
       <div class="container mx-auto p-10 text-center mb-9">
       <MobileView>
