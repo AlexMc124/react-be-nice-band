@@ -1,10 +1,18 @@
 import {BrowserView, MobileView} from 'react-device-detect';
 
-
-function SongKick() {
+export default function LiveDatesSection() {
   return (
-    <>
-    <MobileView>
+    <div class="h-screen bg-center bg-space-background bg-cover">
+      <div
+        className="live-dates-section"
+        class="container mx-auto p-10 text-center"
+      >
+        <h1 className="text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
+          Live Dates
+        </h1>
+      </div>
+      <div class="container mx-auto p-10 text-center mb-9">
+      <MobileView>
         <a
           href="https://www.songkick.com/artists/10250591"
           class="songkick-widget"
@@ -24,7 +32,7 @@ function SongKick() {
           data-past-events="off"
           data-past-events-offtour="off"
           data-remind-me="off"
-        ></a>
+        ><i class="fa fa-phone" aria-hidden="true"></i> </a>
         <script src="//widget-app.songkick.com/injector/10250591"></script>
       </MobileView>
       <BrowserView>
@@ -47,27 +55,9 @@ function SongKick() {
           data-past-events="off"
           data-past-events-offtour="off"
           data-remind-me="off"
-        ></a>
+        ><i class="fa fa-phone" aria-hidden="true"></i> </a>
       <script src="//widget-app.songkick.com/injector/10250591"></script>
       </BrowserView>
-    </>
-  );
-}
-
-
-export default function LiveDatesSection() {
-  return (
-    <div class="h-screen bg-center bg-space-background bg-cover">
-      <div
-        className="live-dates-section"
-        class="container mx-auto p-10 text-center mb-9"
-      >
-        <h1 className="mb-5 text-4xl font-extrabold text-white align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
-          Live Dates
-        </h1>
-      </div>
-      <div class="container mx-auto p-10 text-center mb-9">
-        <SongKick />
       </div>
     </div>
   );

@@ -55,7 +55,7 @@ const navigation = [
 
 export default function Navbar() {
   return (
-    <nav class="bg-gray-800 fixed top-0 left-0 right-0">
+    <nav class="z-10 bg-gray-800 fixed top-0 left-0 right-0">
       <div class="max-w-screen-xl flex flex-wrap place-items-center justify-between mx-auto md:flex md:items-center md:justify-between">
         <a
           href="https://benice.band/"

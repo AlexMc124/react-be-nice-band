@@ -2,7 +2,7 @@ import { Carousel } from "@material-tailwind/react";
  
 export default function CarouselDefault() {
   return (
-    <Carousel transition={{ duration: 0.5 }} autoplay={true} className="rounded-xl h-1/4">
+    <Carousel transition={{ duration: 0.5 }} autoplay={true} loop="true" className="z-0 rounded-xl h-1/4">
       <img
         src="images/fastcars3.JPG"
         alt="Fast Cars"
@@ -10,12 +10,12 @@ export default function CarouselDefault() {
       />
       <img
         src="images/jamespolanem.jpg"
-        alt="image 2"
+        alt="Live show"
         className="h-full w-full object-cover"
       />
       <img
         src="images/noghosts2.JPG"
-        alt="image 3"
+        alt="Ghosts"
         className="h-full w-full object-cover"
       />
     </Carousel>
