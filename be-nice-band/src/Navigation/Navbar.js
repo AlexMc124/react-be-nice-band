@@ -1,3 +1,4 @@
+import React from "react";
 /* This example requires Tailwind CSS v2.0+ */
 import IconSpotify from "../Icons/Spotify";
 import IconFacebookCircleLine from "../Icons/Facebook";
@@ -8,6 +9,16 @@ import IconLogoYoutube from "../Icons/Youtube";
 import IconTwitter from "../Icons/Twitter";
 import IconBxlSoundcloud from "../Icons/Soundcloud";
 import IconApplemusic from "../Icons/AppleMusic";
+import {
+  Navbar,
+  MobileNav,
+  Typography,
+  ListItem,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+} from "@material-tailwind/react";
 
 const navigation = [
   {
@@ -53,37 +64,91 @@ const navigation = [
   { name: "Email", href: "be.nice.band1@gmail.com", icon: <IconEmail /> },
 ];
 
-export default function Navbar() {
+export function NavListMenu() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+
+  const renderItems = navigation.map(({ name, href, icon }) => (
+    <a href={href} key={name} class="fill-gray-500 hover:fill-white">
+      <MenuItem>
+        <Typography variant="h6" color="blue-gray" className="mb-1">
+          <ListItem
+                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                selected={isMenuOpen || isMobileMenuOpen}
+                onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+              >
+          {name}
+          <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
+            {icon}
+          </svg>
+          </ListItem>
+        </Typography>
+      </MenuItem>
+    </a>
+  ));
+
   return (
-    <nav class="z-10 bg-gray-800 fixed top-0 left-0 right-0">
-      <div class="max-w-screen-xl flex flex-wrap place-items-center justify-between mx-auto md:flex md:items-center md:justify-between">
-        <a
+    <React.Fragment>
+      <Menu
+        open={isMenuOpen}
+        handler={setIsMenuOpen}
+        offset={{ mainAxis: 20 }}
+        placement="bottom"
+        allowHover={true}
+      >
+        <MenuHandler>
+          <MenuItem
+            className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
+          >
+            Stay Connected!
+          </MenuItem>
+        </MenuHandler>
+        <MenuList className="hidden overflow-visible flex-col bg-black lg:grid">
+          <ul className="col-span-4 w-full flex-wrap">{renderItems}</ul>
+        </MenuList>
+      </Menu>
+    </React.Fragment>
+  );
+}
+
+export function NavList() {
+  return (
+    <ul className="mt-2 mb-4 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+      <NavListMenu />
+    </ul>
+  );
+}
+
+export default function ComplexNavbar() {
+  const [isNavOpen, setIsNavOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setIsNavOpen(false),
+    );
+  }, []);
+
+  return (
+    <Navbar color="gray" class="display-block" className="max-w-full">
+      <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
+        <Typography
+          as="a"
           href="https://benice.band/"
           class="flex items-center"
+          className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
           <img
             src="Titles/be_nice_white_logo.png"
             class="h-10 hover:h-14"
             alt="Be Nice Logo"
           />
-        </a>
-        <div class="flex items-center justify-between">
-          <ul class="flex flex-wrap">
-            {navigation.map((item) => (
-              <li class="h-20 flex items-center">
-                <a
-                  href={item.href}
-                  class="fill-gray-500 hover:fill-white md:me-6"
-                >
-                  <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
-                    {item.icon} 
-                  </svg>
-                </a>
-              </li>
-            ))}
-          </ul>
+        </Typography>
+
+        <div className="hidden lg:block">
+          <NavList />
         </div>
       </div>
-    </nav>
+    </Navbar>
   );
 }
