@@ -100,7 +100,11 @@ export function NavListMenu() {
           <MenuItem
             className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
           >
-            Stay Connected!
+            <img
+            src="Titles/be_nice_white_logo.png"
+              class="h-10 hover:h-14"
+              alt="Be Nice Logo"
+            />
           </MenuItem>
         </MenuHandler>
         <MenuList className="hidden overflow-visible flex-col bg-black lg:grid">
@@ -108,14 +112,6 @@ export function NavListMenu() {
         </MenuList>
       </Menu>
     </React.Fragment>
-  );
-}
-
-export function NavList() {
-  return (
-    <ul className="mt-2 mb-4 flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
-      <NavListMenu />
-    </ul>
   );
 }
 
@@ -138,19 +134,8 @@ export default function ComplexNavbar() {
           class="flex items-center"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
-          <img
-            src="Titles/be_nice_white_logo.png"
-            class="h-10 hover:h-14"
-            alt="Be Nice Logo"
-          />
+          <NavListMenu/>
         </Typography>
-
-        <div className="hidden lg:block">
-          <NavList />
-        </div>
-        <MobileNav open={isNavOpen} className="overflow-scroll">
-          <NavList />
-        </MobileNav>
       </div>
     </Navbar>
   );
