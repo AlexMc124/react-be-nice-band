@@ -11,7 +11,6 @@ import IconBxlSoundcloud from "../Icons/Soundcloud";
 import IconApplemusic from "../Icons/AppleMusic";
 import {
   Navbar,
-  MobileNav,
   Typography,
   ListItem,
   Menu,
@@ -66,7 +65,6 @@ const navigation = [
 
 export function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const renderItems = navigation.map(({ name, href, icon }) => (
     <a href={href} key={name} class="fill-gray-500 hover:fill-white">
@@ -74,8 +72,8 @@ export function NavListMenu() {
         <Typography variant="h6" color="blue-gray" className="mb-1">
           <ListItem
                 className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
-                selected={isMenuOpen || isMobileMenuOpen}
-                onClick={() => setIsMobileMenuOpen((cur) => !cur)}
+                selected={isMenuOpen}
+                onClick={() => setIsMenuOpen((cur) => !cur)}
               >
           {name}
           <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
@@ -116,14 +114,14 @@ export function NavListMenu() {
 }
 
 export default function ComplexNavbar() {
-  const [isNavOpen, setIsNavOpen] = React.useState(false);
+  const setIsNavOpen = React.useState(false);
 
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setIsNavOpen(false),
     );
-  }, []);
+  });
 
   return (
     <Navbar color="gray" class="display-block" className="max-w-full">
