@@ -119,7 +119,7 @@ export default function ComplexNavbar() {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setIsNavOpen(false),
+      () => setIsNavOpen(false),
     );
   });
 
