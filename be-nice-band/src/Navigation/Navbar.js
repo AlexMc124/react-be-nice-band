@@ -148,6 +148,9 @@ export default function ComplexNavbar() {
         <div className="hidden lg:block">
           <NavList />
         </div>
+        <MobileNav open={isNavOpen} className="overflow-scroll">
+          <NavList />
+        </MobileNav>
       </div>
     </Navbar>
   );
