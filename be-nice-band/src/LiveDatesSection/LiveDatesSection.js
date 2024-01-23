@@ -25,7 +25,7 @@ export default function LiveDatesSection() {
           </div>
         </div>
       </div>
-      <div class="container mx-auto p-10 text-center mb-9">
+      <div class="container">
         <a
           href="https://www.songkick.com/artists/10250591"
           class="songkick-widget"
@@ -46,7 +46,7 @@ export default function LiveDatesSection() {
           data-past-events-offtour="off"
           data-remind-me="off"
           style={{ display: "none" }}
-        > </a>
+        >Be Nice!</a>
         <script src="//widget-app.songkick.com/injector/10250591"></script>
       </div>
     </div>
