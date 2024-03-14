@@ -4,6 +4,7 @@ import "./index.css";
 // import EPK from "./components/EPK/EPK.js";
 // import LiveDatesSection from "./components/LiveDatesSection/LiveDatesSection.js";
 // import Footer from "./components/Footer/Footer.js";
+import Section from "./components/Section/Section.js";
 import Navbar from "./components/SimpleComponents/Navbar.js";
 import {
     BrowserRouter as Router,
@@ -20,7 +21,7 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<HomePage />} />
+                <Route exact path="/home" element={<Section />} />
                 <Route path="/bio" element={<Bio />} />
                 <Route
                     path="/gigs"
