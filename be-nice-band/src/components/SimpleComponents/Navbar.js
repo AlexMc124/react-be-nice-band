@@ -1,31 +1,33 @@
 import React from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
- 
+import { Nav, NavLink, NavMenu, NavLogo } from "./NavbarElements";
+
 const Navbar = () => {
-    return (
-        <>
-            <Nav>
-                <NavMenu>
-                    <NavLink to="/home">
-                    <img
-                        src="Titles/benice_straight_Bfill_cropped.png"
-                        class="h-10 hover:h-14"
-                        alt="Be Nice Logo"
-                    />
-                    </NavLink>
-                    <NavLink to="/Bio" activeStyle>
-                        About Us!
-                    </NavLink>
-                    <NavLink to="/gigs" activeStyle>
-                        Gigs
-                    </NavLink>
-                    <NavLink to="/merch" activeStyle>
-                        Merch!
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
-    );
+  return (
+    <>
+      <Nav>
+        <div class="flex flex-row items-stretch w-full font-mono">
+            <NavMenu>
+              <NavLogo to="/home">
+                <img
+                  src="Titles/benice_straight_Bfill_cropped.png"
+                  class="h-10 hover:h-14"
+                  alt="Be Nice Logo"
+                />
+              </NavLogo>
+              <NavLink to="/bio" activeStyle>
+                About Us!
+              </NavLink>
+              <NavLink to="/gigs" activeStyle>
+                Gigs
+              </NavLink>
+              <NavLink to="/merch" activeStyle>
+                Merch!
+              </NavLink>
+            </NavMenu>
+        </div>
+      </Nav>
+    </>
+  );
 };
- 
+
 export default Navbar;
