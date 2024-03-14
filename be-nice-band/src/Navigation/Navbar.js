@@ -71,14 +71,14 @@ export function NavListMenu() {
       <MenuItem>
         <Typography variant="h6" color="blue-gray" className="mb-1">
           <ListItem
-                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
-                selected={isMenuOpen}
-                onClick={() => setIsMenuOpen((cur) => !cur)}
-              >
-          {name}
-          <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
-            {icon}
-          </svg>
+            className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+            selected={isMenuOpen}
+            onClick={() => setIsMenuOpen((cur) => !cur)}
+          >
+            {name}
+            <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
+              {icon}
+            </svg>
           </ListItem>
         </Typography>
       </MenuItem>
@@ -95,11 +95,9 @@ export function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <MenuItem
-            className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full"
-          >
+          <MenuItem className="hidden items-center gap-2 font-medium text-blue-gray-900 lg:flex lg:rounded-full">
             <img
-            src="Titles/be_nice_white_logo.png"
+              src="Titles/be_nice_white_logo.png"
               class="h-10 hover:h-14"
               alt="Be Nice Logo"
             />
@@ -117,10 +115,7 @@ export default function ComplexNavbar() {
   const setIsNavOpen = React.useState(false);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => setIsNavOpen(false),
-    );
+    window.addEventListener("resize", () => setIsNavOpen(false));
   });
 
   return (
@@ -132,9 +127,44 @@ export default function ComplexNavbar() {
           class="flex items-center"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
-          <NavListMenu/>
+          <NavListMenu />
         </Typography>
       </div>
     </Navbar>
+  );
+}
+
+export function SimpleNavbar() {
+  return (
+    <nav class="bg-gray-800 fixed top-0 left-0 right-0">
+      <div class="max-w-screen-xl flex flex-wrap place-items-center justify-between mx-auto md:flex md:items-center md:justify-between">
+        <a
+          href="https://benice.band/"
+          class="flex items-center"
+        >
+          <img
+            src="Titles/benice_straight_Bfill_cropped.png"
+            class="h-10 hover:h-14"
+            alt="Be Nice Logo"
+          />
+        </a>
+        <div class="flex items-center justify-between">
+          <ul class="flex flex-wrap">
+            {navigation.map((item) => (
+              <li class="h-20 flex items-center">
+                <a
+                  href={item.href}
+                  class="fill-gray-500 hover:fill-white md:me-6"
+                >
+                  <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
+                    {item.icon} 
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
