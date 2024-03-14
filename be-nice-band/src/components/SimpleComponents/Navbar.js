@@ -20,8 +20,8 @@ const Navbar = () => {
               <NavLink to="/gigs" activeStyle>
                 Gigs
               </NavLink>
-              <NavLink to="/merch" activeStyle>
-                Merch!
+              <NavLink to="/contact" activeStyle>
+                Contact Us!
               </NavLink>
             </NavMenu>
         </div>

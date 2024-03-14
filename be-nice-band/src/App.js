@@ -1,10 +1,5 @@
 import React from "react";
 import "./index.css";
-// import SimpleNavbar from "./components/Navigation/Navbar.js";
-// import EPK from "./components/EPK/EPK.js";
-// import LiveDatesSection from "./components/LiveDatesSection/LiveDatesSection.js";
-// import Footer from "./components/Footer/Footer.js";
-import Section from "./components/Section/Section.js";
 import Navbar from "./components/SimpleComponents/Navbar.js";
 import {
     BrowserRouter as Router,
@@ -15,13 +10,15 @@ import HomePage from "./pages/homepage.js";
 import Bio from "./pages/bio.js";
 import Gigs from "./pages/gigs.js";
 import Merch from "./pages/merch.js";
+import Contact from "./pages/contact.js";
 
 function App() {
     return (
+        <>
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/home" element={<Section />} />
+                <Route exact path="/home" element={<HomePage />} />
                 <Route path="/bio" element={<Bio />} />
                 <Route
                     path="/gigs"
@@ -31,8 +28,13 @@ function App() {
                     path="/merch"
                     element={<Merch />}
                 />
+                <Route
+                    path="/contact"
+                    element={<Contact />}
+                />
             </Routes>
         </Router>
+        </>
     );
 }
  
