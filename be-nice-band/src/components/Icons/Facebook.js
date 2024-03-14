@@ -4,7 +4,7 @@ import * as React from "react";
 function IconFacebookCircleLine() {
   return (
     <svg
-      viewBox="0 0 24 24"
+      viewBox="0 0 36 36"
       height="1.5em"
       width="1.5em"
     >

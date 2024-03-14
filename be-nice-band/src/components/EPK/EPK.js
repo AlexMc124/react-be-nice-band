@@ -1,4 +1,3 @@
-import DialogDefault from "./Modal.js";
 import CarouselDefault from "./Carousel.js";
 import React from "react";
 import "yet-another-react-lightbox/styles.css";
@@ -10,7 +9,7 @@ export default function EPK() {
         <div class="flex flex-col items-center justify-center">
           <div class="flex flex-row items-center justify-center">
             <img
-              class="size-1/8"
+              class="size-60"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
@@ -19,14 +18,14 @@ export default function EPK() {
               <img src="Titles/flamingsubtitle.gif" alt="Flaming Subtext" />
             </div>
             <img
-              class="size-1/8"
+              class="size-32"
               src="Titles/teddy-bear-butterfly.gif"
               alt="Flaming Text"
             />
           </div>
         </div>
 
-        <div class="container mx-auto p-10 text-left font-mono flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
+        <div class="container mx-auto p-10 text-left font-sans flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
           <section class="mb-2">
             <div class="text-xl text-left underline">Intro</div>
             <div class="text-left indent-2 p-2 text-base/7">

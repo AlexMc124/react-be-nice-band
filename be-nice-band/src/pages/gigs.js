@@ -1,8 +1,8 @@
 import React from "react";
-import LiveDatesSection from "../components/LiveDatesSection/LiveDatesSection.js";
+import BandsInTown from "../components/LiveDatesSection/bandsintown.js";
 
 const Gigs = () => {
-  return <LiveDatesSection />;
+  return <BandsInTown />;
 };
 
 export default Gigs;

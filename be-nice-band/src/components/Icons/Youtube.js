@@ -4,7 +4,7 @@ import * as React from "react";
 function IconLogoYoutube() {
   return (
     <svg
-      viewBox="0 0 512 512"
+      viewBox="0 0 768 768"
       height="1.5em"
       width="1.5em"
     >
