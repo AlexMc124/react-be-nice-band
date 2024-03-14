@@ -1,11 +1,10 @@
 import React from "react";
- 
+import EPK from "../components/EPK/EPK.js";
+
 const Bio = () => {
     return (
         <div>
-            <h1>
-                BIO
-            </h1>
+            <EPK />
         </div>
     );
 };

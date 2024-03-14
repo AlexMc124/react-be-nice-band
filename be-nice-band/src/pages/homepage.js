@@ -1,11 +1,10 @@
 import React from "react";
- 
+import Section from "../components/Section/Section.js";
+
 const HomePage = () => {
     return (
         <div>
-            <h1>
-            HomePage
-            </h1>
+            <Section />
         </div>
     );
 };

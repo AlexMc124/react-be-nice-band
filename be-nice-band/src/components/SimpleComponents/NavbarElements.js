@@ -11,6 +11,21 @@ export const Nav = styled.nav`
 	z-index: 12;
 `;
 
+
+
+export const NavLogo = styled(Link)`
+	display: flex;
+	align-items: left;
+	padding: 0 1rem;
+	height: 100%;
+	cursor: 105%;
+	hover: none;
+	&.active {
+		color: #4d4dff;
+	}
+`;
+
+
 export const NavLink = styled(Link)`
 	color: #808080;
 	display: flex;
