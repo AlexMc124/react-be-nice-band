@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import {ComplexNavbar, SimpleNavbar} from "./Navigation/Navbar.js";
+import SimpleNavbar from "./Navigation/Navbar.js";
 import Section from "./Section/Section.js";
 import EPK from "./EPK/EPK.js";
 import LiveDatesSection from "./LiveDatesSection/LiveDatesSection.js";
@@ -10,10 +10,6 @@ function App() {
   return (
     <div>
       <SimpleNavbar />
-      <Section />
-      <EPK/>
-      <LiveDatesSection />
-      <Footer />
     </div>
   );
 }
