@@ -9,11 +9,7 @@ module.exports = withMT({
     },
     extend: {
       display: ["group-hover"],
-      backgroundImage: {
-        'be-nice-1': "url('src/BackgroundImages/indexphoto.jpg')",
-        'space-background': "url('../src/BackgroundImages/space.gif')",
-        'footer-texture': "url('/img/footer-texture.png')",
-    }},
+    },
   },
   plugins: [],
 });

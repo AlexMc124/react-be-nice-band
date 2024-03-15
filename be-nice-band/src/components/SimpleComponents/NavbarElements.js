@@ -18,7 +18,7 @@ export const NavLogo = styled(Link)`
 	display: flex;
 	align-items: center;
 	padding: 0 1rem;
-	height: 100%;
+	class: "h-100 hover:h-110";
 	&.active {
 		height: 110%;
 	}

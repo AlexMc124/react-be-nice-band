@@ -59,12 +59,12 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <div class="flex flex-row items-stretch w-full  font-helvetica">
+        <div class="flex flex-row items-stretch w-full  font-helvetica items-h-10 hover:h-14">
           <NavMenu>
             <NavLogo to="/home">
               <img
                 src="logos/beniceblackhollow.png"
-                class="h-10 hover:h-14"
+                class="h-14"
                 alt="Be Nice Logo"
               />
             </NavLogo>
