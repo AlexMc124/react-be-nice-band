@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <div class="flex flex-row items-stretch w-full font-mono">
+        <div class="flex flex-row items-stretch w-full  font-helvetica">
           <NavMenu>
             <NavLogo to="/home">
               <img
@@ -79,8 +79,8 @@ const Navbar = () => {
             </NavLink>
           </NavMenu>
         </div>
-        <div class="flex flex-row items-stretch w-full font-mono">
-          <div class="flex items-center justify-between">
+        <div class="flex flex-row items-stretch w-full justify-end">
+          <div class="flex items-center justify-end">
             {navigation.map((item) => (
               <a
                 href={item.href}

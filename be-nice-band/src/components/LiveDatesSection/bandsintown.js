@@ -90,7 +90,9 @@ const BandsInTown = () => {
         data-affil-code=""
         data-bit-logo-position="bottomRight"
         data-bit-logo-color="#CCCCCC"
-      ></a>
+        target="_blank"
+        rel="noreferrer"
+      >Bands In Town Link</a>
     </>
   );
 };
