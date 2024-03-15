@@ -26,7 +26,7 @@ export const NavLogo = styled(Link)`
 
 
 export const NavLink = styled(Link)`
-	color: #fc9003;
+	color: grey;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
@@ -35,7 +35,7 @@ export const NavLink = styled(Link)`
 	height: 100%;
 	cursor: pointer;
 	&.active {
-		color: #f2eee9;
+		color: #000000;
 	}
 `;
 
