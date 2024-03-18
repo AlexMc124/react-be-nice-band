@@ -18,7 +18,7 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route exact path="/home" element={<HomePage />} />
+                <Route exact path="/" element={<HomePage />} />
                 <Route path="/bio" element={<Bio />} />
                 <Route
                     path="/gigs"

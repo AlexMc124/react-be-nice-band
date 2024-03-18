@@ -61,7 +61,7 @@ const Navbar = () => {
       <Nav>
         <div class="flex flex-row items-stretch w-full  font-helvetica items-h-10 hover:h-14">
           <NavMenu>
-            <NavLogo to="/home">
+            <NavLogo to="">
               <img
                 src="logos/beniceblackhollow.png"
                 class="h-14"
