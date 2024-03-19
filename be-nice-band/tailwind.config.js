@@ -10,6 +10,9 @@ module.exports = withMT({
     extend: {
       display: ["group-hover"],
     },
+    backgroundImage: {
+      'background': "url('/BackgroundImages/backgroundimage.JPG')",
+    }
   },
   plugins: [],
 });

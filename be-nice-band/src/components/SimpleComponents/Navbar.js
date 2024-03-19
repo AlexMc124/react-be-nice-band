@@ -59,7 +59,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <div class="flex flex-row items-stretch w-full  font-helvetica items-h-10 hover:h-14">
+        <div class="flex basis-1/2 items-stretch w-full  font-helvetica items-h-10 hover:h-14">
           <NavMenu>
             <NavLogo to="">
               <img
@@ -79,14 +79,14 @@ const Navbar = () => {
             </NavLink>
           </NavMenu>
         </div>
-        <div class="flex flex-row items-stretch w-full justify-end">
-          <div class="flex items-center justify-end">
+        <div class="flex flex-row flex basis-1/2 items-stretch w-full justify-end">
+          <div class="flex basis-1/9 items-center justify-end">
             {navigation.map((item) => (
               <a
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
-                class="text-2xl p-2 text-red-500"
+                class="text-2xl p-2 md:text-1 p-0"
               >
                 <svg class="w-10 h-10 size-8" viewBox="0 0 24 24">
                   {item.icon}

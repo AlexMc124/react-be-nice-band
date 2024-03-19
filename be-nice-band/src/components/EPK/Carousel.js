@@ -14,7 +14,7 @@ export default function CarouselDefault() {
         className="h-full w-full object-cover"
       />
       <img
-        src="images/noghosts2.JPG"
+        src="images/front3rockinbrixton.jpg"
         alt="Ghosts"
         className="h-full w-full object-cover"
       />

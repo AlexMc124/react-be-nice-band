@@ -1,9 +1,8 @@
 import React from "react";
-import Section from "../components/Section/Section.js";
 
 const HomePage = () => {
   return (
-      <Section />
+      <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/backgroundimage.JPG')] h-full "></div>
   );
 };
 

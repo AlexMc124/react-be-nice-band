@@ -28,8 +28,6 @@ const BandsInTown = () => {
         </div>
       </div>
       <div class="bit-container h-full w-auto">
-        {/* add an iframe for this site https://www.bandsintown.com/a/15526828-be-n!ce */}
-
         <iframe
           class="responsive-iframe"
           src="https://bnds.us/bmbyt0"
