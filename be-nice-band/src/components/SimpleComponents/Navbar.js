@@ -1,6 +1,5 @@
 import React from "react";
 
-import { NavLink as Link } from "react-router-dom";
 import IconSpotify from "../Icons/Spotify";
 import IconFacebookCircleLine from "../Icons/Facebook";
 import IconEmail from "../Icons/Email";
@@ -58,46 +57,51 @@ const navigation = [
 const Navbar = () => {
   return (
     <>
-      <div class="h-40">
-        <div class="grid grid-rows-5 grid-cols-2 grid-flow-col gap-1 h-40 justify-items-center">
-          <div class="row-span-3 w-full">
-            <Link to="">
-              <img
-                src="logos/beniceblackhollow.png"
-                class="h-24"
-                alt="Be Nice Logo"
-              />
-            </Link>
-            </div>
-            <div class="row-span-2 flex space-x-4">
-              {navigation.map((item) => (
-                  <a
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    class="text-2xl md:text-1"
-                  >
-                    <svg class="pt-2 md:w-10 h-10 sm:w-5 h-5" viewBox="0 0 24 24">
-                      {item.icon}
-                    </svg>
-                  </a>
-                ))}
-            </div>
-          </div>
-          
-          <div class="row-2 col-1">
-          <Link to="/bio" activeStyle>
-              About Us!
-            </Link>
-            <Link to="/gigs" activeStyle>
-              Gigs
-            </Link>
-            <Link to="/contact" activeStyle>
-              Contact Us!
-            </Link>
-            
+      <div class="bg-pink-300">
+        <div class="flex flex-row items-center justify-center">
+          <a href="/">
+            <img
+              src="logos/beniceblackhollow.png"
+              class="max-w-80 max-h-40 justify-center"
+              alt="Be Nice Logo"
+            />
+          </a>
+        </div>
+        <div class="flex flex-row items-center justify-center">
+          <div class="row-span-2 flex space-x-4">
+            {navigation.map((item) => (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                class="text-2xl md:text-1"
+              >
+                <svg class="w-10 h-10" viewBox="0 0 24 24">
+                  {item.icon}
+                </svg>
+              </a>
+            ))}
           </div>
         </div>
+      
+      <div class="flex flex-row items-center justify-center p-2">
+        <div class="font-mono p-2">
+          <a href="/bio" class="text-base">
+            About Us!
+          </a>
+        </div>
+        <div class="font-mono p-2">
+          <a href="/gigs" activeStyle>
+            Gigs
+          </a>
+        </div>
+        <div class="font-mono p-2">
+          <a href="/contact" activeStyle>
+            Contact Us!
+          </a>
+        </div>
+      </div>
+      </div>
     </>
   );
 };

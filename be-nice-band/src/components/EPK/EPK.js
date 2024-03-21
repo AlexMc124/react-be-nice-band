@@ -10,7 +10,7 @@ export default function EPK() {
           <div class="basis-1/3 items-center justify-center">
             <img src="Titles/teddy-bear-butterfly.gif" alt="Flaming Text" />
           </div>
-          <div class="basis-1/3">
+          <div class="basis-1/3 place-items-center justify-center">
             <img src="Titles/flaminglogo.gif" alt="Flaming Text" />
             <img src="Titles/flamingsubtitle.gif" alt="Flaming Subtext" />
           </div>
