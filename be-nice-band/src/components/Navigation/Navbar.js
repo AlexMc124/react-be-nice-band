@@ -148,12 +148,12 @@ export function SimpleNavbar() {
         <div class="flex items-center justify-between">
           <ul class="flex flex-wrap">
             {navigation.map((item) => (
-              <li class="h-20 flex items-center">
+              <li class="flex items-center">
                 <a
                   href={item.href}
                   class="fill-gray-500 hover:fill-white md:me-6"
                 >
-                  <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
+                  <svg class="size-6" viewBox="0 0 12 12">
                     {item.icon}
                   </svg>
                 </a>

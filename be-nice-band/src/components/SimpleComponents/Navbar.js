@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Nav, NavLink, NavMenu, NavLogo } from "./NavbarElements";
+import { NavLink as Link } from "react-router-dom";
 import IconSpotify from "../Icons/Spotify";
 import IconFacebookCircleLine from "../Icons/Facebook";
 import IconEmail from "../Icons/Email";
@@ -58,44 +58,46 @@ const navigation = [
 const Navbar = () => {
   return (
     <>
-      <Nav>
-        <div class="flex basis-1/2 items-stretch w-full  font-helvetica items-h-10 hover:h-14">
-          <NavMenu>
-            <NavLogo to="">
+      <div class="h-40">
+        <div class="grid grid-rows-5 grid-cols-2 grid-flow-col gap-1 h-40 justify-items-center">
+          <div class="row-span-3 w-full">
+            <Link to="">
               <img
                 src="logos/beniceblackhollow.png"
-                class="h-14"
+                class="h-24"
                 alt="Be Nice Logo"
               />
-            </NavLogo>
-            <NavLink to="/bio" activeStyle>
+            </Link>
+            </div>
+            <div class="row-span-2 flex space-x-4">
+              {navigation.map((item) => (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    class="text-2xl md:text-1"
+                  >
+                    <svg class="pt-2 md:w-10 h-10 sm:w-5 h-5" viewBox="0 0 24 24">
+                      {item.icon}
+                    </svg>
+                  </a>
+                ))}
+            </div>
+          </div>
+          
+          <div class="row-2 col-1">
+          <Link to="/bio" activeStyle>
               About Us!
-            </NavLink>
-            <NavLink to="/gigs" activeStyle>
+            </Link>
+            <Link to="/gigs" activeStyle>
               Gigs
-            </NavLink>
-            <NavLink to="/contact" activeStyle>
+            </Link>
+            <Link to="/contact" activeStyle>
               Contact Us!
-            </NavLink>
-          </NavMenu>
-        </div>
-        <div class="flex flex-row flex basis-1/2 items-stretch w-full justify-end">
-          <div class="flex basis-1/9 items-center justify-end">
-            {navigation.map((item) => (
-              <a
-                href={item.href}
-                target="_blank"
-                rel="noreferrer"
-                class="text-2xl p-2 md:text-1 p-0"
-              >
-                <svg class="w-10 h-10 size-8" viewBox="0 0 24 24">
-                  {item.icon}
-                </svg>
-              </a>
-            ))}
+            </Link>
+            
           </div>
         </div>
-      </Nav>
     </>
   );
 };

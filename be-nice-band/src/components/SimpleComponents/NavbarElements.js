@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: #ffb3ff;
-  height: 95px;
+  height: 180px;
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1500px) / 2);
@@ -13,7 +13,6 @@ export const Nav = styled.nav`
 `;
 
 export const NavLogo = styled(Link)`
-  display: flex;
   align-items: center;
   padding: 0 1rem;
   class: "h-100 hover:h-110";
@@ -28,7 +27,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   height: 100%;
   cursor: pointer;
   &.active {
