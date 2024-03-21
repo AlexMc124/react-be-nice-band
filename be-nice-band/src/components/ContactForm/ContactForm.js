@@ -17,16 +17,16 @@ const ContactForm = () => {
     }
 
     fetch(FORM_ENDPOINT, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+        Accept: "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error('Form response was not ok');
+          throw new Error("Form response was not ok");
         }
 
         setSubmitted(true);
@@ -47,11 +47,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form
-      action={FORM_ENDPOINT}
-      onSubmit={handleSubmit}
-      method="POST"
-    >
+    <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
       <div className="pt-0 mb-3">
         <input
           type="text"

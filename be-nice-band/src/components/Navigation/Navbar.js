@@ -138,10 +138,7 @@ export function SimpleNavbar() {
   return (
     <nav class="bg-gray-800 fixed top-0 left-0 right-0">
       <div class="max-w-screen-xl flex flex-wrap place-items-center justify-between mx-auto md:flex md:items-center md:justify-between">
-        <a
-          href="https://benice.band/"
-          class="flex items-center"
-        >
+        <a href="https://benice.band/" class="flex items-center">
           <img
             src="Titles/benice_straight_Bfill_cropped.png"
             class="h-10 hover:h-14"
@@ -157,7 +154,7 @@ export function SimpleNavbar() {
                   class="fill-gray-500 hover:fill-white md:me-6"
                 >
                   <svg class="size-8 hover:size-10" viewBox="0 0 24 24">
-                    {item.icon} 
+                    {item.icon}
                   </svg>
                 </a>
               </li>

@@ -46,7 +46,9 @@ export default function LiveDatesSection() {
           data-past-events-offtour="off"
           data-remind-me="off"
           style={{ display: "none" }}
-        >Be Nice!</a>
+        >
+          Be Nice!
+        </a>
         <script src="//widget-app.songkick.com/injector/10250591"></script>
       </div>
     </div>

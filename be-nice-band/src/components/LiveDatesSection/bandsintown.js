@@ -38,8 +38,6 @@ const BandsInTown = () => {
           allow="encrypted-media"
           title="bandsintown-iframe"
         ></iframe>
-
-        
       </div>
     </div>
   );

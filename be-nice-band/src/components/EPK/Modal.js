@@ -6,13 +6,12 @@ import {
   DialogBody,
   DialogFooter,
 } from "@material-tailwind/react";
- 
 
 export default function DialogDefault() {
   const [open, setOpen] = React.useState(false);
- 
+
   const handleOpen = () => setOpen(!open);
- 
+
   return (
     <>
       <Button onClick={handleOpen} variant="gradient">
@@ -21,7 +20,7 @@ export default function DialogDefault() {
       <Dialog open={open} handler={handleOpen}>
         <DialogHeader>About BE N!CE</DialogHeader>
         <DialogBody>
-        <section class="mb-2">
+          <section class="mb-2">
             <div class="text-xl text-left underline">Meet the Band</div>
             <ul class="text-left p-2 text-base/7">
               <li>
