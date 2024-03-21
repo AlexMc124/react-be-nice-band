@@ -14,5 +14,7 @@ module.exports = withMT({
       'background': "url('/BackgroundImages/backgroundimage.JPG')",
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 });

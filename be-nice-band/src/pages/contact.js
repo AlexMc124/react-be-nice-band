@@ -1,23 +1,26 @@
-import React from 'react';
+import React from "react";
+import { useEffect } from "react";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 function Contact() {
-    return (
-        <div>
-            <h1>Contact Us</h1>
-            <form>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" />
+  useEffect(() => {
+    if (document) {
+      const stylesheet = document.createElement("link");
+      stylesheet.rel = "stylesheet";
+      stylesheet.href =
+        "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
 
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" />
+      document.head.appendChild(stylesheet);
+    }
+  }, []);
 
-                <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    );
+  return (
+    <div class="bg-centre bg-[url('BackgroundImages/backgroundimage.JPG')]">
+      <div class="container pt-10 h-full">
+        <ContactForm />
+      </div>
+    </div>
+  );
 }
 
 export default Contact;
