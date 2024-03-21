@@ -15,8 +15,8 @@ function Contact() {
   }, []);
 
   return (
-    <div class="bg-centre bg-[url('BackgroundImages/backgroundimage.JPG')]">
-      <div class="container pt-10 h-full">
+    <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/backgroundimage.JPG')] h-full ">
+      <div class="container pt-10">
         <ContactForm />
       </div>
     </div>
