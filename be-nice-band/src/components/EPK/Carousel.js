@@ -6,22 +6,21 @@ export default function CarouselDefault() {
       transition={{ duration: 0.5 }}
       autoplay={true}
       loop="true"
-      className="z-0 rounded-xl h-1/4"
     >
       <img
-        src="images/fastcars3.JPG"
+        src="images/replacement_for_faster_cars.JPG"
         alt="Fast Cars"
-        className="h-full w-full object-cover"
+        class="aspect-video"
       />
       <img
         src="images/jamespolanem.jpg"
         alt="Live show"
-        className="h-full w-full object-cover"
+        class="aspect-video	"
       />
       <img
         src="images/front3rockinbrixton.jpg"
         alt="Ghosts"
-        className="h-full w-full object-cover"
+        class="aspect-video"
       />
     </Carousel>
   );

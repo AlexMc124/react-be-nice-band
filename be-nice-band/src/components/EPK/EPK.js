@@ -26,10 +26,8 @@ export default function EPK() {
         </section>
       </div>
 
-      <div class="p-10">
-        <section>
+      <div class="p-10 h-100 w-100">
           <CarouselDefault />
-        </section>
       </div>
     </div>
   );
