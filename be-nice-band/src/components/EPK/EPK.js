@@ -4,7 +4,7 @@ import "yet-another-react-lightbox/styles.css";
 
 export default function EPK() {
   return (
-    <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500 pt-10">
+    <div class="bg-gradient-to-r from-gray-900 to-gray-700 pt-10">
       <div class="container p-10 text-left font-sans flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
         <section class="mb-2">
           <div class="text-left indent-2 p-2 text-base/7">
@@ -21,9 +21,7 @@ export default function EPK() {
             mental health, social injustice, sexual harassment and being sleepy,
             made distinct through each member’s own unique musical contribution
             thanks to a wide range of influences while having overtones of
-            Bikini Kill, The Oozes and Witch Fever. In their first year, the
-            band made their mark in the DIY London-scene and grew a small but
-            loyal following. They intend to make 2024 the year of BE N!CE.
+            Bikini Kill, The Oozes and Witch Fever.
           </div>
         </section>
       </div>
