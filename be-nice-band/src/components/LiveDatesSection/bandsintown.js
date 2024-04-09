@@ -5,17 +5,9 @@ const BandsInTown = () => {
     <div class="h-screen bg-center bg-black bg-cover">
       <div class="container mx-auto">
         <div class="flex flex-row items-center justify-center">
-          <div class="basis-1/3 items-center justify-center">
-            <img src="Titles/3dgifmaker96154.gif" alt="flip logo" />
-          </div>
-          <div class="basis-1/3">
           <h1 className="text-4xl font-extrabold text-white text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto">
                 Live Dates
               </h1>
-          </div>
-          <div class="basis-1/3 items-center justify-center">
-            <img src="Titles/3dgifmaker96154.gif" alt="flip logo" />
-          </div>
         </div>
       </div>
 
