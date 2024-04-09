@@ -6,7 +6,6 @@ import IconEmail from "../Icons/Email";
 import IconInstagram from "../Icons/Instagram";
 import IconBxlTiktok from "../Icons/Tiktok";
 import IconLogoYoutube from "../Icons/Youtube";
-import IconTwitter from "../Icons/Twitter";
 import IconBxlSoundcloud from "../Icons/Soundcloud";
 import IconApplemusic from "../Icons/AppleMusic";
 
@@ -35,11 +34,6 @@ const navigation = [
     name: "Facebook",
     href: "https://www.facebook.com/beniceband1",
     icon: <IconFacebookCircleLine />,
-  },
-  {
-    name: "Twitter",
-    href: "https://x.com/BE_NICE_BAND",
-    icon: <IconTwitter />,
   },
   {
     name: "Soundcloud",
