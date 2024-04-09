@@ -5,24 +5,8 @@ import "yet-another-react-lightbox/styles.css";
 export default function EPK() {
   return (
     <div class="bg-gradient-to-r via-purple-500 from-indigo-500 to-blue-500 pt-10">
-      <div class="container mx-auto">
-        <div class="flex flex-row items-center justify-center">
-          <div class="basis-1/3 items-center justify-center">
-            <img src="Titles/teddy-bear-butterfly.gif" alt="Flaming Text" />
-          </div>
-          <div class="basis-1/3 place-items-center justify-center">
-            <img src="Titles/flaminglogo.gif" alt="Flaming Text" />
-            <img src="Titles/flamingsubtitle.gif" alt="Flaming Subtext" />
-          </div>
-          <div class="basis-1/3 items-center justify-center">
-            <img src="Titles/teddy-bear-butterfly.gif" alt="Flaming Text" />
-          </div>
-        </div>
-      </div>
-
       <div class="container p-10 text-left font-sans flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
         <section class="mb-2">
-          <div class="text-xl text-left underline">Intro</div>
           <div class="text-left indent-2 p-2 text-base/7">
             BE N!CE are a London-based band colliding harsh flavours of punk
             with post-punk, hardcore, grunge & alternative metal influences,
