@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-const FORM_ENDPOINT = "https://herotofu.com/start"; // TODO - update to the correct endpoint
 
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -16,14 +15,15 @@ const ContactForm = () => {
       }
     }
 
-    fetch(FORM_ENDPOINT, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
+    fetch("https://domain.provider.com/mas/api/v1/mail/transaction", {
+        body: "{\"id\":\"3970a1b0-6e27-448a-adfc-0083db15b2fb\", \"tokens\":{\"design_token1\":\"Hi\",\"design_token2\":\"Hello\",\"design_token3\":\"World\",\"subject_token1\":\"XYZ\"}, \"recipient\":\"james@sample.com\"}",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+          Token: "sfg999666t673t7t82"
+        },
+        method: "POST"
+      })
       .then((response) => {
         if (!response.ok) {
           throw new Error("Form response was not ok");
@@ -47,43 +47,37 @@ const ContactForm = () => {
   }
 
   return (
-    <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
-      <div className="pt-0 mb-3">
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
-          required
-        />
-      </div>
-      <div className="pt-0 mb-3">
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
-          required
-        />
-      </div>
-      <div className="pt-0 mb-3">
-        <textarea
-          placeholder="Your message"
-          name="message"
-          className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
-          required
-        />
-      </div>
-      <div className="pt-0 mb-3">
-        <button
-          className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
-          type="submit"
-        >
-          Send a message
-        </button>
-      </div>
-    </form>
+    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+    <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input type="text" className="form-control" />
+    </div>
+    <div className="form-group">
+        <label htmlFor="exampleInputEmail1">Email address</label>
+        <input type="email" className="form-control" aria-describedby="emailHelp" />
+    </div>
+    <div className="form-group">
+        <label htmlFor="message">Message</label>
+        <textarea className="form-control" rows="5"></textarea>
+    </div>
+    <button type="submit" className="btn btn-primary">Submit</button>
+</form>
   );
+//   <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+//     <div className="form-group">
+//         <label htmlFor="name">Name</label>
+//         <input type="text" className="form-control" />
+//     </div>
+//     <div className="form-group">
+//         <label htmlFor="exampleInputEmail1">Email address</label>
+//         <input type="email" className="form-control" aria-describedby="emailHelp" />
+//     </div>
+//     <div className="form-group">
+//         <label htmlFor="message">Message</label>
+//         <textarea className="form-control" rows="5"></textarea>
+//     </div>
+//     <button type="submit" className="btn btn-primary">Submit</button>
+// </form>
 };
 
 export default ContactForm;
