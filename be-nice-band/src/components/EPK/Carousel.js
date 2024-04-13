@@ -7,7 +7,7 @@ export default function CarouselDefault() {
         <img
           src="images/replacementfastercars.JPG"
           alt="Fast Cars"
-          class="aspect-video"
+          className="z-0 rounded-xl h-1/4"
         />
         <img
           src="images/jamespolanem.jpg"

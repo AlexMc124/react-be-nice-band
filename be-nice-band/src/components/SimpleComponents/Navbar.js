@@ -86,7 +86,7 @@ const Navbar = () => {
         </div>
         <div class="font-mono p-2">
           <a href="/gigs" activeStyle>
-            Gigs
+            Gigs!
           </a>
         </div>
         <div class="font-mono p-2">
