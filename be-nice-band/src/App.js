@@ -7,6 +7,8 @@ import Bio from "./pages/bio.js";
 import Gigs from "./pages/gigs.js";
 import Merch from "./pages/merch.js";
 import Contact from "./pages/contact.js";
+import News from "./pages/news.js";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/gigs" element={<Gigs />} />
+          <Route path="/news" element={<News />} />
           <Route path="/merch" element={<Merch />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

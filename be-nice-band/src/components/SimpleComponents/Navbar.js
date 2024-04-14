@@ -90,6 +90,11 @@ const Navbar = () => {
             </a>
           </div>
           <div class="font-sans p-2 text-white hover:text-gray-400">
+            <a href="/news" class="text-base">
+              News!
+            </a>
+          </div>
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/gigs" activeStyle>
               Gigs!
             </a>
