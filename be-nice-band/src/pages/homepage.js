@@ -6,11 +6,11 @@ const HomePage = () => {
   return (
     <>
       <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/homepagebackground.JPG')] h-full" />
-      <div class="items-center justify-center text-center">
-        <h1 class="text-4xl inline-block font-extrabold text-white bg-gray-900 self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre rounded">
+      <div class="items-center justify-center text-center bg-gray-800 p-5">
+        <h1 class="text-4xl inline-block font-extrabold text-white bg-gray-900 self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre rounded mb-2">
           Latest Music
         </h1>
-        <div class="container w-5/6 p-10 bg-gray-900 text-white rounded">
+        <div class="container w-5/6 p-5 bg-gray-900 text-white rounded">
           Our latest single, "Bedtime" is out now on all streaming platforms! A
           seesaw of a song bouncing between hypnotic funky verses and frustrated
           gritty choruses with on-the-nose lyrics that reveal their honest
@@ -66,7 +66,7 @@ const HomePage = () => {
           <script src="//widget-app.songkick.com/injector/10250591"></script>
         </div>
       </div>
-      <div class="h-screen bg-gray-500 h-full items-center justify-center text-center">
+      <div class="h-screen bg-gray-500 h-full items-center justify-center text-center p-5">
         <h1 class="text-4xl inline-block font-extrabold text-white bg-black self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre">
           Picture Gallery
         </h1>
