@@ -56,7 +56,7 @@ const Navbar = () => {
           <a href="/">
             <img
               src="logos/benicelogowhitehollow.png"
-              class="max-w-80 max-h-40 justify-center"
+              class="max-w-80 max-h-40 justify-center hover:opacity-50"
               alt="Be Nice Logo"
             />
           </a>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 rel="noreferrer"
                 class="text-2xl md:text-1"
               >
-                <svg class="w-10 h-10 text-white fill-current" viewBox="0 0 24 24">
+                <svg class="w-10 h-10 text-white fill-current hover:text-gray-400 fill-current" viewBox="0 0 24 24">
                   {item.icon}
                 </svg>
               </a>
@@ -79,22 +79,22 @@ const Navbar = () => {
         </div>
 
         <div class="flex flex-row items-center justify-center p-2">
-          <div class="font-sans p-2 text-white">
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/" class="text-base">
               Home!
             </a>
           </div>
-          <div class="font-sans p-2 text-white">
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/bio" class="text-base">
               About Us!
             </a>
           </div>
-          <div class="font-sans p-2 text-white">
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/gigs" activeStyle>
               Gigs!
             </a>
           </div>
-          <div class="font-sans p-2 text-white">
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/contact" activeStyle>
               Contact Us!
             </a>

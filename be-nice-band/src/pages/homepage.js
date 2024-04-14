@@ -5,7 +5,17 @@ import "yet-another-react-lightbox/styles.css";
 const HomePage = () => {
   return (
     <>
-      <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/homepagebackground.JPG')] h-full" />
+      <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/homepagebackground.JPG')] h-full">
+        <div class="container h-full content-end text-center p-10">
+          <button
+            class="bg-gray-900 text-6xl hover:bg-gray-400 text-white font-bold py-2 px-4 rounded self-center text-center align-centre"
+            type="button"
+            variant="contained"
+          >
+            LinkTree
+          </button>
+        </div>
+      </div>
       <div class="items-center justify-center text-center bg-gray-800 p-5">
         <h1 class="text-4xl inline-block font-extrabold text-white bg-gray-900 self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre rounded mb-2">
           Latest Music
@@ -66,7 +76,7 @@ const HomePage = () => {
           <script src="//widget-app.songkick.com/injector/10250591"></script>
         </div>
       </div>
-      <div class="h-screen bg-gray-500 h-full items-center justify-center text-center p-5">
+      <div class="h-screen bg-gray-800 h-full items-center justify-center text-center p-5">
         <h1 class="text-4xl inline-block font-extrabold text-white bg-black self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre">
           Picture Gallery
         </h1>
