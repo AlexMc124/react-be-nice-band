@@ -1,8 +1,13 @@
 import React from "react";
 import CarouselDefault from "../components/EPK/Carousel.js";
 import "yet-another-react-lightbox/styles.css";
+import { useEffect } from "react"
 
 const HomePage = () => {
+  useEffect(() => {
+    document.title = "Be Nice! - Home Page"
+  }, [])
+
   return (
     <>
       <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/homepagebackground.JPG')] h-full">

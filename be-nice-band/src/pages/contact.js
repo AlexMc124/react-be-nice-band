@@ -2,8 +2,13 @@ import React from "react";
 // import { useEffect } from "react";
 // import ContactForm from "../components/ContactForm/ContactForm";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react"
 
 function Contact() {
+  useEffect(() => {
+    document.title = "Be Nice! - Contact Us"
+  }
+  , [])
   const sendemail = (e) => {
     e.preventDefault();
     emailjs

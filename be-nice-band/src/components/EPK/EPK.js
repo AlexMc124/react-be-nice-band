@@ -1,8 +1,13 @@
 import CarouselDefault from "./Carousel.js";
 import React from "react";
 import "yet-another-react-lightbox/styles.css";
+import { useEffect } from "react"
 
 export default function EPK() {
+  useEffect(() => {
+    document.title = "Be Nice! - About Us"
+  }, [])
+
   return (
     <div class="bg-gradient-to-r from-gray-900 to-gray-700 pt-10">
       <div class="container p-10 bg-grey text-black rounded text-left font-sans flex flex-col items-left justify-left text-m sm:text-center dark:text-gray-400">

@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react"
 
 const BandsInTown = () => {
+  useEffect(() => {
+    document.title = "Be Nice! - Gigs"
+  }, [])
+
   return (
     <div class="h-screen bg-center bg-black bg-cover">
         <div class="flex flex-row items-center justify-center">
