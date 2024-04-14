@@ -51,7 +51,7 @@ const navigation = [
 const Navbar = () => {
   return (
     <>
-      <div class="bg-pink-300">
+      <div class="bg-gray-500">
         <div class="flex flex-row items-center justify-center">
           <a href="/">
             <img

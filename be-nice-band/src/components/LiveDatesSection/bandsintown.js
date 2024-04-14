@@ -3,12 +3,10 @@ import React from "react";
 const BandsInTown = () => {
   return (
     <div class="h-screen bg-center bg-black bg-cover">
-      <div class="container mx-auto">
         <div class="flex flex-row items-center justify-center">
-          <h1 className="text-4xl font-extrabold text-white text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5">
-                Live Dates
-              </h1>
-        </div>
+          <h1 className="text-4xl inline-block font-extrabold text-white text-center align-centre md:text-5xl lg:text-6xl dark:text-white p-5">
+            Live Dates
+          </h1>
       </div>
 
       <div class="bit-container h-full w-auto">

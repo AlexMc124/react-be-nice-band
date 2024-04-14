@@ -5,8 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 export default function EPK() {
   return (
     <div class="bg-gradient-to-r from-gray-900 to-gray-700 pt-10">
-      <div class="container p-10 text-left font-sans flex flex-col items-left justify-left text-m text-white sm:text-center dark:text-gray-400 p-10">
-        <section class="mb-2">
+      <div class="container p-10 bg-grey text-black rounded text-left font-sans flex flex-col items-left justify-left text-m sm:text-center dark:text-gray-400">
           <div class="text-left indent-2 p-2 text-base/7">
             BE N!CE are a London-based band colliding harsh flavours of punk
             with post-punk, hardcore, grunge & alternative metal influences,
@@ -23,7 +22,6 @@ export default function EPK() {
             thanks to a wide range of influences while having overtones of
             Bikini Kill, The Oozes and Witch Fever.
           </div>
-        </section>
       </div>
 
       <div class="p-10 h-100 w-100">

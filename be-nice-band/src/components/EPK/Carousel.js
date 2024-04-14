@@ -7,7 +7,6 @@ export default function CarouselDefault() {
         <img
           src="images/replacementfastercars.JPG"
           alt="Fast Cars"
-          className="z-0 rounded-xl h-1/4"
         />
         <img
           src="images/jamespolanem.jpg"
@@ -18,6 +17,16 @@ export default function CarouselDefault() {
           src="images/front3rockinbrixton.jpg"
           alt="Ghosts"
           class="aspect-video"
+        />
+        <img
+          src="images/cool_pic.jpg"
+          alt="Ghosts"
+          class="aspect-video"
+        />
+        <img
+          src="images/emhorns.jpg"
+          alt="Ghosts"
+          class="bg-cover"
         />
       </Carousel>
     </div>
