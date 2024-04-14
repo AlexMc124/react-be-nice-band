@@ -51,11 +51,11 @@ const navigation = [
 const Navbar = () => {
   return (
     <>
-      <div class="bg-gray-500">
+      <div class="bg-gray-900">
         <div class="flex flex-row items-center justify-center">
           <a href="/">
             <img
-              src="logos/beniceblackhollow.png"
+              src="logos/benicelogowhitehollow.png"
               class="max-w-80 max-h-40 justify-center"
               alt="Be Nice Logo"
             />
@@ -70,31 +70,36 @@ const Navbar = () => {
                 rel="noreferrer"
                 class="text-2xl md:text-1"
               >
-                <svg class="w-10 h-10" viewBox="0 0 24 24">
+                <svg class="w-10 h-10 text-white fill-current" viewBox="0 0 24 24">
                   {item.icon}
                 </svg>
               </a>
             ))}
           </div>
         </div>
-      
-      <div class="flex flex-row items-center justify-center p-2">
-        <div class="font-mono p-2">
-          <a href="/bio" class="text-base">
-            About Us!
-          </a>
+
+        <div class="flex flex-row items-center justify-center p-2">
+          <div class="font-sans p-2 text-white">
+            <a href="/" class="text-base">
+              Home!
+            </a>
+          </div>
+          <div class="font-sans p-2 text-white">
+            <a href="/bio" class="text-base">
+              About Us!
+            </a>
+          </div>
+          <div class="font-sans p-2 text-white">
+            <a href="/gigs" activeStyle>
+              Gigs!
+            </a>
+          </div>
+          <div class="font-sans p-2 text-white">
+            <a href="/contact" activeStyle>
+              Contact Us!
+            </a>
+          </div>
         </div>
-        <div class="font-mono p-2">
-          <a href="/gigs" activeStyle>
-            Gigs!
-          </a>
-        </div>
-        <div class="font-mono p-2">
-          <a href="/contact" activeStyle>
-            Contact Us!
-          </a>
-        </div>
-      </div>
       </div>
     </>
   );
