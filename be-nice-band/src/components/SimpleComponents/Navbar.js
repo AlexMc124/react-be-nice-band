@@ -100,6 +100,11 @@ const Navbar = () => {
             </a>
           </div>
           <div class="font-sans p-2 text-white hover:text-gray-400">
+            <a href="/merch" activeStyle>
+              Merch!
+            </a>
+          </div>
+          <div class="font-sans p-2 text-white hover:text-gray-400">
             <a href="/contact" activeStyle>
               Contact Us!
             </a>
