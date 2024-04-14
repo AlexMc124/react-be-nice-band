@@ -7,13 +7,15 @@ const HomePage = () => {
     <>
       <div class="h-screen bg-cover bg-centre bg-[url('BackgroundImages/homepagebackground.JPG')] h-full">
         <div class="container h-full content-end text-center p-10">
-          <button
-            class="bg-gray-900 text-6xl hover:bg-gray-400 text-white font-bold py-2 px-4 rounded self-center text-center align-centre"
-            type="button"
-            variant="contained"
-          >
-            LinkTree
-          </button>
+          <a href="https://linktr.ee/be_nice">
+            <button
+              class="bg-gray-900 text-6xl hover:bg-gray-400 text-white font-bold py-2 px-4 rounded self-center text-center align-centre"
+              type="button"
+              variant="contained"
+            >
+              LinkTree
+            </button>
+          </a>
         </div>
       </div>
       <div class="items-center justify-center text-center bg-gray-800 p-5">
