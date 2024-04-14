@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselDefault from "../components/EPK/Carousel.js";
+import CarouselDefault from "../components/EPK/CarouselHome.js";
 import "yet-another-react-lightbox/styles.css";
 import { useEffect } from "react"
 
@@ -27,20 +27,12 @@ const HomePage = () => {
         <h1 class="text-4xl inline-block font-extrabold text-white bg-gray-900 self-center text-center align-centre md:text-5xl lg:text-6xl dark:text-white mx-auto p-5 text-center align-centre rounded mb-2">
           Latest Music
         </h1>
-        <div class="container w-5/6 p-5 bg-gray-900 text-white rounded">
-          Our latest single, "Bedtime" is out now on all streaming platforms! A
-          seesaw of a song bouncing between hypnotic funky verses and frustrated
-          gritty choruses with on-the-nose lyrics that reveal their honest
-          feelings as the self-described “sleepiest band on earth”.
-        </div>
         <div class="container h-1/2 w-1/2 h-max-1/2 w-max-1/2 p-5">
-          <img src="images/bedtime_artwork.jpeg" alt="Bedtime Single Artwork" />
+          <img src="images/bedtime_artwork.jpeg" alt="BEDTIME Single Artwork" />
         </div>
         <div class="container p-5 w-5/6 bg-gray-900 text-white rounded">
           Recorded & mixed by Big Fig Studio’s <b>Jake Stanton</b>, as well as
-          mastered by <b>Arran Dutt</b>, the band have been aided in bringing
-          their best live sound to the record, achieving a final result that
-          exceeds the quality of their previous singles.
+          mastered by <b>Arran Dutt</b>
         </div>
         <div class="container p-5 mt-1 w-5/6 bg-gray-900 text-white rounded text-center align-centre rounded">
           🤘

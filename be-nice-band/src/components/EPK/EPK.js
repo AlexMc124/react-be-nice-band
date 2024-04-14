@@ -1,4 +1,4 @@
-import CarouselDefault from "./Carousel.js";
+import CarouselDefault from "./CarouselAbout.js";
 import React from "react";
 import "yet-another-react-lightbox/styles.css";
 import { useEffect } from "react"
