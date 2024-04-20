@@ -38,7 +38,7 @@ const HomePage = () => {
           🤘
           <b>
             <u>
-              <a href="www.benice.band">Listen Now!</a>
+              <a href="https://open.spotify.com/track/6MzhseNGoXfehCpAUd3Jje?si=f540d8db03294fb0">Listen Now!</a>
             </u>
           </b>
           🤘

@@ -14,13 +14,14 @@ export default function News() {
           {/* Story one */}
           <div class="container p-5 mb-10 bg-gray-900 rounded">
             <div class=" text-white text-4xl">Release of BEDTIME!</div>
-            <div class="row-span-2 flex items-center">
+            <div class="row-span-2 flex items-center on-hover:scale-110 transition-transform duration-500 ease-in-out">
               <div class="text-white w-1/4">
+                <a href="https://open.spotify.com/track/6MzhseNGoXfehCpAUd3Jje?si=f540d8db03294fb0" >
                 <img
                   src="images/bedtime_artwork.jpeg"
-                  class="h-60 w-60 rounded p-5"
+                  class="h-60 w-60 rounded p-5 "
                   alt="Bedtime Cover Art"
-                ></img>
+                ></img></a>
               </div>
               <div class="text-white p-5 w-3/4">
                 Underground & unsigned seriously silly London-based 4-piece punk
