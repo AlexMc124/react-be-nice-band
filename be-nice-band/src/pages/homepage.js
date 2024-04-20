@@ -28,7 +28,9 @@ const HomePage = () => {
           Latest Music
         </h1>
         <div class="container h-1/2 w-1/2 h-max-1/2 w-max-1/2 p-5">
-          <img src="images/bedtime_artwork.jpeg" alt="BEDTIME Single Artwork" />
+        <a href="https://open.spotify.com/track/6MzhseNGoXfehCpAUd3Jje?si=f540d8db03294fb0">
+          <img src="images/bedtime_artwork.jpeg" alt="BEDTIME Single Artwork" class="hover:scale-105 transition-transform duration-500 ease-in-out" />
+        </a>
         </div>
         <div class="container p-5 w-5/6 bg-gray-900 text-white rounded">
           Recorded & mixed by Big Fig Studio’s <b>Jake Stanton</b>, as well as

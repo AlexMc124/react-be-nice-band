@@ -12,9 +12,10 @@ export default function News() {
       <div class="bg-gradient-to-r from-gray-900 to-gray-700 pt-10 ">
         <div class="container h-full p-10 bg-grey text-black rounded text-left font-sans flex flex-col items-left justify-left text-m sm:text-center dark:text-gray-400">
           {/* Story one */}
-          <div class="container p-5 mb-10 bg-gray-900 rounded">
+          <a href="https://open.spotify.com/track/6MzhseNGoXfehCpAUd3Jje?si=f540d8db03294fb0">
+          <div class="container p-5 mb-10 bg-gray-900 rounded hover:scale-110 transition-transform duration-500 ease-in-out">
             <div class=" text-white text-4xl">Release of BEDTIME!</div>
-            <div class="row-span-2 flex items-center on-hover:scale-110 transition-transform duration-500 ease-in-out">
+            <div class="row-span-2 flex items-center">
               <div class="text-white w-1/4">
                 <a href="https://open.spotify.com/track/6MzhseNGoXfehCpAUd3Jje?si=f540d8db03294fb0" >
                 <img
@@ -42,8 +43,9 @@ export default function News() {
               </div>
             </div>
           </div>
+          </a>
           {/* Story two */}
-          <div class="container p-5 mb-10 bg-gray-900 rounded">
+          <div class="container p-5 mb-10 bg-gray-900 rounded hover:scale-110 transition-transform duration-500 ease-in-out">
             <div class=" text-white text-4xl">HellFest Audition</div>
             <div class="row-span-2 flex items-center">
               <div class="text-white w-1/2">
