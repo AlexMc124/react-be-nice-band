@@ -9,7 +9,14 @@ import Merch from "./pages/merch.js";
 import Contact from "./pages/contact.js";
 import News from "./pages/news.js";
 
-
+function App2() {
+  // Write a page saying under construction
+  return (
+    <div>
+      <h1>Under Construction</h1>
+    </div>
+  );
+}
 function App() {
   return (
     <>
@@ -28,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default App2;
